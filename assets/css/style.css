@@ -1,0 +1,381 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+:root {
+    --primary: #383838;
+    --secondary: #FF1A58;
+    --terciary: #939393;
+  }
+
+  @font-face {
+    font-family: Alessandria;
+    src: local(Barrio), url(../font/Alessandria.ttf)
+  }
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    background-color: #F2F2F2;
+
+}
+
+h1{
+    font-size: 45px;
+    border-bottom: solid 9px var(--secondary);
+}
+
+.history img{
+    max-width: 270px;
+}
+
+.container{
+   max-width: 1364px;
+   align-items: center;
+   align-content: center;
+   margin: 0 auto;
+   padding: 0px 30px 0px 30px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.top nav ul{
+    display: flex;
+}
+
+.top nav ul li a{
+    margin-right: 40px;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.top nav ul li a:hover{
+    color: var(--secondary);
+    border-bottom: solid var(--secondary) 3px;
+}
+.menu{
+ display: flex;
+}
+
+.social svg{
+    width: 28px;
+    height: 28px;
+    margin-top: 10px;
+    fill: rgb(202, 202, 202);
+}
+
+.social svg:hover{
+    fill: rgb(107, 107, 107);
+}
+
+.banner{
+    background-color: #F2F2F2;
+}
+#banner{
+    display: flex;
+    justify-content: space-between;
+    max-height: 900px;
+    background-image:url('../img/girl.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 900px;
+    opacity: 2%;
+    transition: 1300ms;
+}
+
+.bannerCelula{
+    opacity: 30%;
+    position: relative;  
+    overflow: hidden; 
+}
+
+.bannerText{
+    align-self: center;
+}
+
+.bannerText h2{
+    margin-bottom: -30px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 43px;
+    font-weight: normal;
+    max-width: 290px;
+    opacity: 0;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.scriptText{
+    font-family: "Alessandria" ;
+    color: var(--secondary);
+    text-shadow: 0px 1px 0px var(--secondary);
+    margin-top: -30px;
+    z-index: 1;
+    
+}
+
+.resultados{
+    margin-top: -230px;
+    position: relative;
+
+}
+
+.form, .boxForm{
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    margin:0 auto
+    
+}
+
+.form h2{
+    color:var(--secondary);
+    padding: 0;
+    margin: 0;
+}
+
+.form p{
+    color:var(--terciary);
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.boxForm{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.068);
+    width: max-content;
+    border-radius: 13px;
+}
+
+.inputTextCodigo,
+.inputTextPassword {
+    font-size: 18px;
+    border: none;
+    font-weight: normal;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: center;
+    width: 89px;
+    border-bottom: solid 2px #93939330;
+    transition: 300ms;
+}
+
+.inputTextCodigo:hover,
+.inputTextPassword:hover{
+    transform: scale(1.3);
+} 
+
+.dados input::placeholder{
+    color: #cecece;
+    font-weight: lighter;
+} 
+
+.inputTextCodigo{
+    background-image: url(../img/codigo.png);
+}
+
+.inputTextPassword {
+    background-image: url(../img/password.png);
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+}
+
+.options{
+    padding-top: 15px;
+    font-size: 12px;
+    color: #868686;
+}
+
+.buttonSubmit input[type="submit"] {
+    background-color: var(--secondary);
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #ff1a5767;
+    transition: 500ms;
+    
+}
+
+.buttonSubmit input[type="submit"]:hover{
+    background-color: #f74171;
+    transform: scale(1.2);
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.boxAbout1,
+.boxAbout2{
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: 400ms;
+}
+
+.boxAbout1{
+    border: solid 1px #93939367;
+    color: var(--terciary);
+}
+.boxAbout1 h4{
+    color: var(--secondary);
+    font-size: 18px;
+    padding: 0 px;
+    margin: 15px 0px 0px 0px;
+}
+
+.boxAbout2{
+    border: solid 1px #FF1A58;
+    color: #000);
+    background: #FF1A58;
+}
+.boxAbout2 h4{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 px;
+    margin: 15px 0px 0px 0px;
+}
+
+.boxAbout1:hover,
+.boxAbout2:hover{
+    transform: scale(1.1);
+}
+.quoteBG{
+    background-image: url('../img/laboratorio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+}
+
+.quote{
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quote p{
+    font-family: "Alessandria";
+    text-align: center;
+}
+
+.history{
+    display: flex;
+    padding: 30px;
+}
+
+.history div{
+    padding: 30px;
+    flex: 1;
+    align-self: flex-start;
+}
+
+.history div p{
+    font-size: 14px;
+    color: var(--terciary);
+}
+
+.listParcerias{
+    display: flex;
+    padding-left: 16px;
+}
+
+.listParcerias li{
+    margin-right: 20px;
+}
+
+.listParcerias li::before {
+    content: "•  "; color: red;
+
+}
+
+footer{
+    background-color: var(--secondary);
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+}
+
+.footer div{
+    max-width: 300px;
+    text-align: -webkit-center;
+    padding: 20px;
+}
+
+.footer div h3{
+    border-bottom: solid 2px #fff;
+    width: 200px;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+.copyrigth{
+    background-color: black;
+    text-align: center;
+    padding: 20px
+}
+.copyrigth a{
+    color: white;
+}
+
+#scroll {
+    height:150px;
+    overflow:scroll;
+}
+
+@media screen and (max-width:800px) {
+    #banner{
+        display: grid;
+        align-items: center;
+        padding: 50px 0px 250px 0px;
+    }
+    .top,
+    .menu,
+    .about,
+    .history,
+    .footer{
+        display: grid;
+    }
+    .social{
+        flex: 1;
+    }
+    .top{
+        text-align: center;
+        justify-content: center;
+    }
+    
+}

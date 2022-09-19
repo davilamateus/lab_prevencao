@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Laboratório Prevenção</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    
+</head>
+<body onload="load()" >
+    <header>
+        <div class="container top">
+            <div class="logo">
+                <a href="#home"><img src="assets/img/logo.png" alt="Logo Laboratório Prevenção"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                        <a href="https://www.facebook.com/laboratorioprevencao/"><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 32 32" width="48px" height="48px"><path d="M 16 4 C 9.3844276 4 4 9.3844276 4 16 C 4 22.615572 9.3844276 28 16 28 C 22.615572 28 28 22.615572 28 16 C 28 9.3844276 22.615572 4 16 4 z M 16 6 C 21.534692 6 26 10.465308 26 16 C 26 21.027386 22.311682 25.161277 17.488281 25.878906 L 17.488281 18.916016 L 20.335938 18.916016 L 20.783203 16.023438 L 17.488281 16.023438 L 17.488281 14.443359 C 17.488281 13.242359 17.882859 12.175781 19.005859 12.175781 L 20.810547 12.175781 L 20.810547 9.6523438 C 20.493547 9.6093438 19.822688 9.515625 18.554688 9.515625 C 15.906688 9.515625 14.355469 10.913609 14.355469 14.099609 L 14.355469 16.023438 L 11.632812 16.023438 L 11.632812 18.916016 L 14.355469 18.916016 L 14.355469 25.853516 C 9.6088556 25.070647 6 20.973047 6 16 C 6 10.465308 10.465308 6 16 6 z"/></svg></a>
+                        <a href="https://www.instagram.com/laboratorio_prevencao/"><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" width="48px" height="48px">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div  id="banner">
+            <div class="bannerText container">
+                <h2>A mais de 30 anos com a</h2>
+                <h2 class="scriptText">qualidade</h2>
+                <h2>que você merece!</h2>
+            </div>
+            <div  class="bannerCelula">
+                <img src="assets/img/celula.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="inicio" class="resultados">
+        <div class="container form">
+            <h2>Resultado de Exames</h3>
+            <p>Entre com os dados fornecidos em atendimento.</p>
+        </div>
+        <div class="boxForm">
+            <form action="https://portal.worklabweb.com.br/resultados-on-line/972" method="post" target="_blank">
+                <p>
+                   <div class="dados">
+                       <input class='inputTextCodigo' maxlength="16" name="tbCodigo" size="13" type="text" value="" placeholder="Chave">&nbsp; &nbsp; &nbsp;&nbsp;
+                       <input class="inputTextPassword" maxlength="16" name="tbSenha" size="13" type="password" value="" placeholder="Senha"><br>
+                    </div> 
+                    <div class="options">
+                        <input checked="checked" name="rdbOpcao" type="radio" value="paciente"><span >Paciente</span>
+                        <input name="rdbOpcao" type="radio" value="medico"><span >Médico</span>
+                        <input  name="rdbOpcao" type="radio" value="convenio"><span >Convenio</span>
+                        <input name="rdbOpcao" type="radio" value="unidade"><span >Unidade</span>
+                    </div>
+                </p>
+                <p class="buttonSubmit">
+                    <input type="submit" value="Ver Resultados"></p>
+                <p>
+                </p>
+                </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="container about">
+            <div><h1>Somos</br>Especialistas</h1></div>
+            <div class="boxAbout1">
+                <img src="assets/img/Image 3.png" alt="Microscopio">
+                <h4>Análises Clínicas</h4>
+                <p>As análises clínicas são um conjunto de exames com a finalidade de verificar o estado de saúde do paciente ou investigar doenças por meio de testes laboratoriais, auxiliando assim no diagnóstico médico.</p>
+            </div>
+            <div class="boxAbout2">
+                <img src="assets/img/Image 4.png" alt="Célula">
+                <h4>Citologia</h4>
+                <p>A citopatologia é uma técnica diagnóstica que examina as células e suas alterações morfológicas auxiliando na determinação da causa das doenças.</p>
+            </div>
+            <div class="boxAbout1">
+                <img src="assets/img/Image 4.png" alt="Tecido da Pele">
+                <h4>Anatomia Patológica </h4>
+                <p>A anatomia patológica é o exame macro e microscópico de órgãos, células, tecidos e líquidos corporais a fim de desenvolver diagnóstico para o tratamento de diversas doenças.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="quoteBG">
+            <div class="quote">
+                <h3>“Cuidar da saúde de nossos paciêntes com carinho e competência é contar com profissionais  bem instruídos que trabalham com amor todos os dias.”</h3>
+                <p>Aurion D'avila</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="sobre" class="container history ">
+            <div>
+                <h1>Nossa</br>História</h1>
+                <p>O Laboratório Prevenção, com mais de 30 anos dedicados à saúde, abriu sua primeira unidade em 1989, tornando-se uma referência no Estado de Goiás nos serviços de anatomopatologia, citologia, análises clínicas, análise de DNA e exame toxicológico. </br> </br> Hoje, com diversas unidades espalhadas por todo o Estado, temos crescido graças a parceria dos nossos colaboradores e clientes conveniados, os quais reconhecem nosso nome como sinônimo de qualidade e confiança. </br>  </br> Nossa história não poderia ser escrita apenas por nossas conquistas territoriais ou econômicas, mas também nas conquistas de cada colaborador a quem fomos úteis e pelo qual existimos. Por tudo isso, nosso muito obrigado por fazer da nossa história um grande sucesso!</p>
+            </div>
+            <div>
+                <h1>Controle de</br>Qualidade</h1>
+                <p>Todos os meses nossos laboratórios passam por um rigoroso controle de qualidade realizado pelos principais órgãos regulatórios do país.</p>
+                <img src="assets/img/controle.png" alt="Controle de Qualidade Logos">
+            </div>
+            <div>
+                <h1>Seja um dos</br>Nossos Parceiros</h1>
+                <p>Ser um parceiro do Laboratório Prevenção, significa unir-se a um dos mais respeitados laboratórios do Centro-oeste.</br>  </br>Garantimos o nosso compromisso com a qualidade e excelência que dedicamos a todos os nossos processos, desde o atendimento aos clientes à análise dos materiais coletados e liberação dos laudos.</p>
+                <h3>Temos parcerias com:</h3>
+                <ul class="listParcerias">
+                    <li>Convêncios</li>
+                    <li>Médicos</li>
+                    <li>Clínicas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="unidades"class="container footer">
+            <div>
+                <h3>Goiânia - GO</h3>
+                <p>Avenida Paranaíba, Nº: 1323 - Centro Telefone:  (62) 3213-6888</p>
+            </div>
+            <div>
+                <h3>Valparaíso - GO</h3>
+                <p>
+                    Rua 03, quadra 10, lote 05 - Parque Rio Branco (61) 9285-2738 (Whatsapp) </p>
+            </div>
+            <div>
+                <h3>Cidade Ocidental - GO</h3>
+                <p>
+                    Rua Sq12, Qd:02 Lt:50 – Centro Telefone: (61) 3625-3816</p>
+            </div>
+            <div>
+                <h3>Luziânia - GO</h3>
+                <p>Rua Isaac Gonçalves - Cais - I – Setor Fumal </p>
+            </div>
+            <div>
+                <h3>Formosa - GO</h3>  <p>
+                    Rua Emilio Povoa, Nº45 - Centro Telefone: (61) 3631-4815 </p>
+            </div>
+            <div>
+                <h3>Água Boa - MT</h3>
+                <p> Rua 03, Nº 955 - Centro II Telefone:   (66) 99951-9569</p>
+            </div>
+            <div>
+                <h3>Canarana - MT</h3>
+                <p>Avenida Paraná, Nº133 - Centro Telefone:   (66) 99620-1303</p>
+            </div>
+
+        </div>
+        <div class="copyrigth">
+            <a href="https://mateusdavila.com" target="black">Desenvolvido por Mateus D'avila</a>
+
+        </div>
+    </footer>
+
+
+<script src="assets/js/script.js"></script>    
+</body>
+</html>
